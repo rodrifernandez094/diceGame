@@ -1,2 +1,2 @@
 # diceGame
-Simple dice game build using html, css and javascript.
+Simple dice game builded using html, css and javascript.
