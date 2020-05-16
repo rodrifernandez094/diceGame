@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #393e46;
+  color: #4ecca3;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0.5em 2em;
+  text-align: center;
+  width: 70%;
+  /* outline: 1px solid red; */
+}
+
+.title {
+  cursor: pointer;
+  font-family: "lobster";
+  font-size: 6rem;
+  margin: 0.5em 0;
+  /* outline: 1px solid green; */
+  text-transform: capitalize;
+  text-shadow: 5px 0 #232931;
+}
+
+.subtitle {
+  font-family: "indie flower";
+  font-size: 2rem;
+  margin-bottom: 1em;
+  text-transform: capitalize;
+  text-shadow: 2px 0 #232931;
+}
+
+.players {
+  /* outline: 1px solid blue; */
+  padding: 2em;
+  display: flex;
+}
+
+.player {
+  margin: 0 auto;
+  padding: 1.5em;
+  width: 100%;
+}
+
+.player + .player {
+  margin-left: 1em;
+}
+
+.dice {
+  width: 60%;
+}
+
+.footer {
+  margin-top: 0.8em;
+  width: 100%;
+  text-align: center;
+}
+
+/* media queries */
+
+@media (max-width: 825px) {
+  .players {
+    flex-wrap: wrap;
+  }
+
+  .player + .player {
+    margin-left: 0;
+  }
+}
